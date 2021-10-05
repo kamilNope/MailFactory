@@ -1,0 +1,23 @@
+server:
+  port: 8002
+
+spring:
+  application:
+    name: 'quality-service'
+
+logging:
+  level:
+    root: debug
+
+#feign:
+#  client:
+#    config:
+#      default:
+#        loggerLevel: full
+
+eureka:
+  client:
+    service-url:
+      default-zone: 'http://localhost:8761/eureka'
+  instance:
+    prefer-ip-address: true

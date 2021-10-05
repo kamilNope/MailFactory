@@ -21,8 +21,8 @@ public class MailFastServiceApplication {
         SpringApplication.run(MailFastServiceApplication.class, args);
     }
 
-    @RequestMapping("/")
-    public String serviceInstanceName() {
+    @RequestMapping("/mail")
+    public String sendMail() {
         return "Hello world!\n\n" + eurekaClient.getInstanceRemoteStatus() + "\n" + eurekaClient.getEurekaClientConfig();
     }
 
