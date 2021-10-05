@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: "fast-service"
+server:
+  port: 8001
+# default eureka address is 8761 but to be sure you can define it
+eureka:
+  client:
+    service-url:
+      default-zone: 'http://localhost:8761/eureka'
